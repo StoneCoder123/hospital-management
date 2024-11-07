@@ -141,7 +141,7 @@ export const AuthProvider = ({ children }) => {
     }
     const getMinDateTime = () => {
         const now = new Date();
-        now.setMinutes(now.getMinutes() + 30); // Add 30 minutes to the current time
+        now.setMinutes(now.getMinutes());
       
         const year = now.getFullYear();
         const month = String(now.getMonth() + 1).padStart(2, '0');
